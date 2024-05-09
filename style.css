@@ -1,0 +1,72 @@
+#header-wrapper {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+.def_back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://uploads-ssl.webflow.com/661d19a60faf12d65eb95ca5/662368c7d3e89f8326229eab_Header-grid.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.def {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.def p {
+  color: #fff;
+  width: 80vw;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  mask-image: url("mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 70px;
+  background: black;
+  box-shadow: 0px 0px 10px #fff;
+}
+.mask p {
+  color: #fff;
+  width: 80vw;
+}
+
+@media screen and (max-width: 479px) {
+  #header-wrapper::before {
+    content: "";
+    display: none;
+  }
+}

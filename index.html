@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header-wrapper">
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="mask">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+      </div>
+      <div class="def">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta
+          deleniti aliquid consequuntur nulla quam. Placeat voluptatum, ipsum
+          fuga obcaecati ea quidem nemo ad! Maxime facilis temporibus culpa
+          provident ea.
+        </p>
+        <div class="def_back"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".mask");
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    function animateCircles() {
+      let size = 140;
+      let x = coords.x - size / 2;
+      let y = coords.y - size / 2;
+      circles.forEach(function (circle, index) {
+        circle.style.maskPosition = x + "px " + y + "px";
+        circle.style.maskSize = size - index * 2 + "px";
+
+        circle.style.zIndex = 100 - index;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.5 + index / 32;
+        y += (nextCircle.y - y) * 0.5 + index / 32;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+  </script>
+</html>
